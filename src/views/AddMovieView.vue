@@ -1,27 +1,27 @@
 <template>
   <HeaderComponent />
   <main>
-    <HomeComponent />
+    <AddMovieComponent />
   </main>
 </template>
 
 <script>
 // @ is an alias to /src
+import AddMovieComponent from "@/components/AddMovieComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
-import HomeComponent from "@/components/HomeComponent.vue";
 
 export default {
-  name: "HomeView",
+  name: "AddMovieView",
   components: {
+    AddMovieComponent,
     HeaderComponent,
-    HomeComponent
-},
+  },
 };
 </script>
 
 <style lang="scss">
-main {
-  background-color: $--el-color-primary-light-8;
-  padding-top: 80px;
-}
+// main {
+//   background-color: $--el-color-primary-light-8;
+//   padding-top: 80px;
+// }
 </style>
